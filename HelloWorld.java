@@ -18,6 +18,13 @@ public class HelloWorld
          {
             System.out.println("It's alive!");
             x=x+1;
+            
+            try {
+               Thread.sleep(1000);
+            }  catch (InterruptException ie){
+               ie.printStackTrace();
+            }
+                        
          }
       System.out.println("It's dead");
    }
